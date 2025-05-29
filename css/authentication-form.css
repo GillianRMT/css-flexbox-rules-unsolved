@@ -12,6 +12,8 @@ body {
 
 .content {
   padding: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 h2 {
@@ -25,8 +27,19 @@ p {
 /* 👇👇👇  ADD YOUR FORM STYLES BENEATH  👇👇👇*/
 
 form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   border: 1px solid #a9a9a9;
   padding: 20px;
+  gap: 30px;
+}
+
+.form-submit-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
 }
 
 .subtext {
@@ -34,9 +47,24 @@ form {
   font-weight: unset;
 }
 
+.form-input-control {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  flex: 1;
+}
+
+.form-group-horizontal-control {
+  display: flex;
+  gap: 30px;
+}
+
 #sign-in,
 #sign-up {
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
 a {
@@ -61,6 +89,10 @@ input[type="radio"] {
   padding: 0;
 }
 
+.un-bold {
+  font-weight: normal;
+}
+
 input[type="submit"] {
   width: unset;
   height: unset;
@@ -78,6 +110,10 @@ input[type="submit"] {
 
 input[type="submit"]:hover {
   background: #294bbb;
+}
+
+select {
+  height: 30px;
 }
 
 .form select {
